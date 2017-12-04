@@ -1,6 +1,12 @@
 # Summary
 
 * [User Manual](contents/user-manual/README.md)
+	* [User Management](contents/user-manual/user-management.md)
+	* [Application Settings](contents/user-manual/application-settings.md)
+	* [Project Management](contents/user-manual/project-management.md)
+	* [Symbol Modelling](contents/user-manual/symbol-modelling.md)
+	* [Learning](contents/user-manual/learning.md)
+	* [Testing](contents/user-manual/testing.md)
 * [Examples](contents/examples/README.md)
     * [ToDo](contents/examples/todo/README.md)
         * [Installation](contents/examples/todo/installation.md)
@@ -15,5 +21,5 @@
 * [Best Practices](contents/best-practices/README.md)
 * [Developer Documents](contents/developer-documents/README.md)
     * [REST API](contents/developer-documents/REST.md)
-    * [Extend ALEX](contents/developer-documents/extend.md)
+    * [Extending ALEX](contents/developer-documents/extend.md)
 * [FAQ](contents/faq/README.md)

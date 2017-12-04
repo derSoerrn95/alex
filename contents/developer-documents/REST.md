@@ -9,6 +9,8 @@ To create this documentation, a tool called [Swagger](http://swagger.io/) is use
 [an JavaDoc doclet](https://github.com/Carma-Public/swagger-jaxrs-doclet) which creates the files for swagger based on
 the code and some extra information in the JavaDoc.
 
+![Swagger](assets/swagger.jpg)
+
 To test REST resources which require an active user, please use the login method (which does not need an active user)
 and copy the returned token into the *api_key* field on the top of the page.
 
