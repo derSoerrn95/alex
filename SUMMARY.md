@@ -16,3 +16,4 @@
 * [Developer Documents](contents/developer-documents/README.md)
     * [REST API](contents/developer-documents/REST.md)
     * [Extend ALEX](contents/developer-documents/extend.md)
+* [FAQ](contents/faq/README.md)

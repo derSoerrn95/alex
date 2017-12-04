@@ -1,32 +1,47 @@
-/** make all links tu green **/
-.book .book-body .page-wrapper .page-inner section.normal a {
-    color: #87b82b
+::placeholder { 
+   color: #ccc;
 }
 
-/** make the sidebar tu green **/
-.book .book-summary {
-    background: #87b82b
+.book-header {
+	background: #446a8c;
 }
 
-/** make sidebar items white **/
-.book .book-summary ul.summary li a,
-.book .book-summary ul.summary li span {
-    color: #fff
+.book-header h1 {
+	color: #fff;
 }
 
-.book .book-summary ul.summary li a:hover,
-.book .book-summary ul.summary li.active > a {
-    color: #fff;
-    background: #7daa28;
+.book-header .btn:hover {
+	color: #fff;
+	background: #3a5e7d;
 }
 
-/** little hack to get the logo in the sidebar **/
-.book-summary > nav > ul > li:nth-child(1) > a {
-    height: 160px;
-    background-image: url(../../assets/images/logo-alt.png) !important;
-    background-repeat: no-repeat !important;
-    background-position: center center !important;
+.book-summary {
+	border-right: none;
 }
+
+#book-search-input {
+	background: #446a8c;
+	border-bottom: 0;
+}
+
+#book-search-input input, 
+#book-search-input input:hover,
+#book-search-input input:focus {
+	border-radius: 4px;
+	background: #315777;
+	color: #ccc;
+}
+
+.book-summary ul.summary li.active {
+	background: rgba(0,0,0,0.05);
+	border-right: 3px solid #469ce6;
+}
+
+.book-summary ul.summary li.active > a {
+	color: #000;
+	font-weight: 700;
+}
+
 
 /** some bootstrap alert styles **/
 .alert {
@@ -121,13 +136,4 @@
 
 .alert-danger .alert-link {
     color: #843534;
-}
-
-#book-search-input {
-	background: #7daa28;
-	color: #fff;
-}
-
-#book-search-input input::-webkit-input-placeholder {
-   color: rgba(255,255,255,.5);
 }

@@ -1,5 +1,9 @@
 # Examples
 
-In order to get access to ALEX and active automata learning in general, this section provides two examples you can learn yourself.
-The first part covers a step-by-step instruction on how to learn an exemplary _todo application_ with ALEX.
-In the second part, all necessary information is given for learning the REST API of _Wordpress_. 
+In order to get access to ALEX and active automata learning in general, this section provides some examples you can learn yourself.
+The first part covers a step-by-step instruction on how to learn an exemplary *todo application* with ALEX.
+In the second part, all necessary information is given for learning the *[TodoMVC][todomvc]* collection. 
+Then, there is also an example for learning the REST API of [Wordpress][wordpress], which may not be up to date.
+
+[todomvc]: http://todomvc.com/
+[wordpress]: https://wordpress.org/
