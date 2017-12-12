@@ -51,12 +51,14 @@ Afterwards, the *ALEX-build-X.X.X.war* archive is created in the `build/target` 
 
 ## Command line arguments
 
-| Argument                  | Description                                                                                                                                                       |
-|---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `alex.dbpath`             | The path where the HSQL DB is stored. <br> `java -jar ALEX-1.4.0.war --alex.dbpath=mem:testdb` respectively <br>  `mvn spring-boot:run "-Dalex.dbpath=mem:testdb"`|
-| `alex.port`               | The path where ALEX should run <br> `java -jar ALEX-1.4.0.war --alex.port=8000` respectively `mvn spring-boot:run "-Dalex.port=8000"`                             |
-| `alex.frontendPort`       | The port where the frontend runs on. <br> E.g. `mvn spring-boot:run "-Dalex.frontendPort=9000"`                                                                   |
-
+| Argument          | Description                                                                                                                                                       |
+|-------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `alex.dbpath`     | The path where the HSQL DB is stored. <br> `java -jar ALEX-1.4.0.war --alex.dbpath=mem:testdb` respectively <br>  `mvn spring-boot:run "-Dalex.dbpath=mem:testdb"`|
+| `alex.port`       | The path where ALEX should run <br> `java -jar ALEX-1.4.0.war --alex.port=8000` respectively `mvn spring-boot:run "-Dalex.port=8000"`                             |
+| `chromeDriver`    | The absolute path to the Chrome driver executable on your system                                                                                                  |
+| `edgeDriver`      | The absolute path to the Edge driver executable on your system                                                                                                    |
+| `firefoxDriver`   | The absolute path to the Gecko driver executable on your system                                                                                                   |
+| `remoteDriver`    | The URI to the remote Selenium serve                                                                                                                              |
 
 ## Deploy with Docker
 
@@ -82,6 +84,8 @@ docker images
 # run ALEX at http://localhost:8000
 docker run -d -p 8000:8080 alex:1.X.X-SNAPSHOT
 ```
+
+The corresponding *Dockerfile* can be found at */build/src/docker*
 
 ## Frontend development
 

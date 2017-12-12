@@ -19,6 +19,7 @@
     * [TodoMVC](contents/examples/todomvc/README.md)
     * [Wordpress](contents/examples/wordpress/README.md)
 * [Best Practices](contents/best-practices/README.md)
+* [CLI](contents/cli/README.md)
 * [Developer Documents](contents/developer-documents/README.md)
     * [REST API](contents/developer-documents/REST.md)
     * [Extending ALEX](contents/developer-documents/extend.md)
