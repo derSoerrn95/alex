@@ -85,6 +85,7 @@ and ALEX offers a subset of these that are presented in the table below.
 | Select                 | Select an option form an select input field.                                 |
 | Switch to              | Switch back to the parent content or the default content from another frame. |
 | Switch to Frame        | Switch the Selenium context to another frame.                                |
+| Wait for Attribute     | Wait until an attribute of an element has or contains a specific value.      |
 | Wait for Text          | Wait until a specific text is visible on the website.                        |
 | Wait for Title         | Wait until the title of a page changes.                                      |
 | Wait for Node          | Wait until the state of an element changes.                                  |
@@ -133,13 +134,14 @@ shows a list of available actions.
 
 | Name                   | Description                                                     |
 |------------------------|-----------------------------------------------------------------|
-| Call                   | Do a REST Call.                                                 |
+| Call                   | Make a REST Call.                                                 |
 | Check Attribute Exists | Check if the response has an specific attribute.                |
 | Check Attribute Type   | Check if an attribute in the response has a specific type.      |
 | Check Attribute Value  | Check if an attribute in the response has a specific value.     |
 | Check Header Field     | Check if the response has a certain header field.               |
 | Check Status           | Check if a previous response returned the expected HTTP status. |
 | Check Text             | Check the response body.                                        |
+| Validate JSON          | Validate the body of a response against a JSON schema.          |
 
 Keep in mind that working with HTTP requests and responses follows a certain pattern. Normally, you make a request and
 analyze the results. The order of your REST actions should also look like that. Start with a *Call* action and use other
@@ -205,7 +207,7 @@ following table.
 |--------------------------|-----------------------------------------------------------------------|
 | \{\{#counterName\}\}      | The value of the counter with the name *counterName* is inserted      |
 | \{\{\$variableName\}\}   | The value of the variable with the name *variableName* is inserted    |
-| \{\{\\\\filename.ext\}\} | The absolute path of the file *filename.ext* is inserted              |
+| \{\{\\filename.ext\}\}   | The absolute path of the file *filename.ext* is inserted              |
 
 As an example for the use of counters and variables, let there be a variable *userName* with the value \'*Admin*\' and
 a counter *countLogins* with the value \'*5*\'. The following symbol makes use of both.
