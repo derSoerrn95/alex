@@ -58,7 +58,7 @@ Afterwards, the *ALEX-build-X.X.X.war* archive is created in the `build/target` 
 | `chromeDriver`    | The absolute path to the Chrome driver executable on your system                                                                                                  |
 | `edgeDriver`      | The absolute path to the Edge driver executable on your system                                                                                                    |
 | `firefoxDriver`   | The absolute path to the Gecko driver executable on your system                                                                                                   |
-| `remoteDriver`    | The URI to the remote Selenium serve                                                                                                                              |
+| `remoteDriver`    | The URI to the remote Selenium server                                                                                                                             |
 
 ## Deploy with Docker
 
@@ -133,7 +133,7 @@ At the moment, the REST interface supports authentication via [JSON Web Tokens (
 The token provides information about the user as a base64 encoded JSON object as payload.
 It looks like `{"email": "<yourEmail>", "id": <ID> "role": "<ROLE>"}` where the role is either *ADMIN* or *REGISTERED*.
 
-That's it. Currently, the password is transferred in plain text since there is no HTTPS connection available for now.
+That's it. Currently, the password is transferred in plain text since there is no HTTPS connection available.
 
 
 [angular]: https://angularjs.org/
