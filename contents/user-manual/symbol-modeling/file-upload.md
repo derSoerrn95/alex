@@ -3,8 +3,9 @@
 A special functionality we want to present here is the upload of files to the target application via an action, since there is no dedicated action for that.
 For this to work, two requirements have to be met:
 
-1. All files have to be uploaded into ALEX first and
+1. All files have to be uploaded into ALEX first.
 2. The file upload only works with native `<input type="file">` elements.
+3. The execution of JavaScript has the be enabled by the targeted web driver.
 
 ![Files 1](assets/file-upload/1.jpg)
 

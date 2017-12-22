@@ -1,4 +1,6 @@
-# ALEX
+<div style="text-align: center; margin: 7rem 0 8rem 0 !important">
+    <img src="assets/images/logo.png">
+</div>
 
 Automata Learning Experience (ALEX) is an extension of [LearnLib](https://github.com/LearnLib/learnlib) that allows 
 you run automated tests on web applications and JSON-based REST APIs using active automata learning.
@@ -7,7 +9,7 @@ Users model basic test inputs for their target application which are used by ALE
 model, or to be more precise, a [Mealy machine](https://en.wikipedia.org/wiki/Mealy_machine) that represents the 
 behavior of the web application.
 
-## Installation and login
+## Installation and Login
 
 We developed and tested ALEX using either Windows 8.1 and higher and Linux Ubuntu 14.10 and higher.
 As the application runs on JAVA, any other system with an installed JVM should do fine.
@@ -18,7 +20,8 @@ After the first start, you can login as an admin using the account below.
 Email: *admin@alex.example* <br>
 Password: *admin*
 
-#### Using the packaged version
+
+### Using the Packaged Version
 
 Make sure you have Java 8 installed on your system.
 
@@ -26,7 +29,8 @@ Make sure you have Java 8 installed on your system.
 2. Open a terminal and start the *war* archive using `java -jar ALEX.war [--alex.port=XXXX]`
 3. Open *http://localhost:8000* in a web browser
 
-#### From source
+
+### From Source
 
 For the installation from the source files, make sure your system matches the following requirements:
 
@@ -43,17 +47,11 @@ To obtain ALEX, execute the following commands in a directory of your choice:
 Afterwards you can build and run ALEX by running following commands:
 
 1. `mvn clean package [-DskipTests]`
-2. `java -jar build/target/ALEX/*war [--alex.port=XXXX]`
-3. open *http://localhost:8000* in a web browser
-
-Or, if you just want to start the backend, you can use:
-
-1. `cd backend`
-2. `mvn spring-boot:run [-Dalex.port=XXXX]`
+2. `java -jar build/target/ALEX/alex-1.4.0-*.war [--alex.port=XXXX]`
 3. open *http://localhost:8000* in a web browser
 
 
-## Further reading
+## Further Reading
 
 * [User manual](http://learnlib.github.io/alex/book/1.4.0/contents/user-manual/index.html)
 * [Examples](http://learnlib.github.io/alex/book/1.4.0/contents/examples/index.html)
