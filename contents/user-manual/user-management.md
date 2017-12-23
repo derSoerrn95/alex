@@ -19,7 +19,7 @@ The credentials are:
 
 ![Login](assets/user-management/login.jpg)
 
-The picture above shows the start page of ALEX. You can either create a new account <span class="label">2</span> or sign <span class="label">2</span> with an existing account.
+The picture above shows the start page of ALEX. You can either create a new account <span class="label">1</span> or sign in <span class="label">2</span> with an existing account.
 In both cases, all you need to enter is an email address and a password.
 
 ## Editing the User Profile

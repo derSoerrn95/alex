@@ -4,7 +4,7 @@
 	* [User Management](contents/user-manual/user-management.md)
 	* [Application Settings](contents/user-manual/application-settings.md)
 	* [Project Management](contents/user-manual/project-management.md)
-	* [Symbol Modeling](contents/user-manual/symbol-modeling/README.md)
+	* [Symbol Modelling](contents/user-manual/symbol-modeling/README.md)
 	    * [Actions](contents/user-manual/symbol-modeling/actions.md)
 	    * [Element Picker](contents/user-manual/symbol-modeling/element-picker.md)
 	    * [Recording Actions](contents/user-manual/symbol-modeling/action-recorder.md)
