@@ -1,6 +1,13 @@
 # Learning
 
-Models are represented as Mealy Machines and represent the learned behaviour of the tested application. 
+![Learning](assets/learning/learning-1.jpg)
+
+After having started a learning process and while the learner is active, ALEX shows you a loading screen where you find different information about the current process.
+In the top half, several statistics and the membership queries that are being executed at the moment are displayed.
+Below, the current state of the model is displayed. 
+You can navigate through all intermediate models <span class="label">1</span> or view details about the current step, change the layout of the model and export the model in the menu <span class="label">2</span>.
+
+Hypotheses are represented as Mealy machines and represent the learned behavior of the target application. 
 Nodes are labeled from *0* to *n*, where nodes represent the internal states of the target application and state *0* (visualised by a green node) is the initial state. 
 Edges denote transitions from one state to another where the edge labels show the symbols whose execution led to the transition into another state.
 Edge labels have the following pattern:
@@ -12,6 +19,27 @@ where &lt;symbolName&gt; is the name of the symbol and the text after the \"/\" 
 In ALEX, the output of the system is interpreted as *"Ok"*, if all actions of a symbol have been executed successfully.
 On the other hand *"Failed (n)"* means that the execution failed on the *n*-th action of the symbol.
 
+![Learning](assets/learning/learning-2.jpg)
+
+After some time, when no more counterexamples can be found, the learner finishes and the final hypothesis is presented like above.
+From here on, you can, if you find it necessary, configure how the learning process should be continued.
+You can also select the equivalence oracle *Sample* and search for counterexamples by yourself, which is explained in the following.
+
+
+## Finding Counterexamples Manually
+
+Beside automated strategies for finding counterexamples, there is the option to search for counterexamples by hand directly on a model.
+
+![Sample](assets/learning/sample-1.jpg)
+
+Therefore, select the equivalence oracle *Sample* from the select input in the sidebar.
+Then, click together a word by clicking on the edge labels of the hypothesis.
+After that, click on <span class="label">1</span> to check if the word actually is a counterexample.
+
+![Sample](assets/learning/sample-2.jpg)
+
+If this is the case, a notification will pop up and the actual system output of the word will be displayed at <span class="label">3</span>.
+Finally, click on the *Resume* button to initiate the refinement of the model given your counterexample.
 
 ## Resuming a Previous Learning Process
 

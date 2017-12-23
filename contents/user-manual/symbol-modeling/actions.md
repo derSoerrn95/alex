@@ -3,20 +3,42 @@
 The function of a symbol is defined by its actions and their execution order. 
 An action can be understood as an atomic interaction with a system, like clicking on a button, submitting a form, making an HTTP request to a REST API and so on.
 
+![Actions](assets/actions/actions-1.jpg)
+
+In the actions view of a symbol, the sequence of actions, which can be rearranged via drag and drop, is displayed.
+Everything you do here is not saved automatically.
+Instead, a notification on the top <span class="label">3</span> notifies you that something has changed.
+A click on the *Save* button saves the action and you are safe to navigate to another page.
+
+![Actions](assets/actions/actions-2.jpg)
+
+A click on the create button opens a modal window, where, on the left, the list of all possible actions is listed.
+On the right, the form for a selected action is displayed. 
+With <span class="label">4</span> you can search for an action by its name instead of searching it in the list.
+
 Each action can be marked with three different flags which are
 
-| Flag          | Description                                                                                           |
-|---------------|-------------------------------------------------------------------------------------------------------|
-| negated       | Negates the outcome of an action.                                                                     |
-| ignoreFailure | If this flag is set to "true" proceedings actions are executed although the action failed.            |
-| disabled      | If this flag is set to "true" its execution is skipped during the call of its symbol.                 |
-
-![Actions Output](assets/actions/actions-custom-output.jpg)
+| Flag          | Description                                                                                                        |
+|---------------|--------------------------------------------------------------------------------------------------------------------|
+| negated       | Negates the outcome of an action.                                                                                  |
+| ignoreFailure | If this flag is set to "true" proceeding actions are executed although the action failed.                          |
+| disabled      | If this flag is set to "true" its execution is skipped during the call of its symbol. <span class="label">2</span> |
 
 Normally, the output of a system is either *"Ok"* or *"Failed"* depending on success of the execution of the symbol.
 If this is not expressive enough, you can also specify a custom failure output of each action that is propagated to the symbol.
-Insert the custom output in <span class="label">1</span> (image above).
+Insert the custom output in <span class="label">6</span> (image above).
 In this field, dynamic values can be inserted as well (see section about variables and counters below).
+
+In the overview, you see another input field for the custom success output of the symbol.
+The value that is inserted here will be the output in case all actions can be executed successfully.
+Note that there can be dynamic outputs as well via variables and counters (see below).
+
+![Actions](assets/actions/actions-3.jpg)
+
+A useful feature is that you can also use copy, cut and paste operations on actions, if e.g. symbols behave similar.
+The option for this can be found in the dropdown menu on the right of each action or for a batch operation on selection actions in the action bar on top <span class="label">7</span>.
+
+In the next sections, we go a little deeper into the single categories of actions.
 
 
 ## Web Actions
