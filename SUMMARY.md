@@ -10,7 +10,6 @@
 	    * [Recording Actions](contents/user-manual/symbol-modeling/action-recorder.md)
 	    * [Uploading Files](contents/user-manual/symbol-modeling/file-upload.md)
 	* [Learning](contents/user-manual/learning/README.md)
-	    * [Setup](contents/user-manual/learning/setup.md)
 	    * [Learning](contents/user-manual/learning/learning.md)
 	    * [Analysis](contents/user-manual/learning/analysis.md)
 	    * [Counters](contents/user-manual/learning/counters.md)
