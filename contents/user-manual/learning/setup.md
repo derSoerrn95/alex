@@ -10,14 +10,25 @@ Such a process always consists of the following components:
 * A maximum amount of steps to learn
 * A specification of a web browser
 
+![Setup](assets/setup/learning-setup-1.jpg)
+
+In the setup view, the list of symbols is displayed from which you have to select the symbols that should be used for the input alphabet.
+Furthermore, a special symbol that resets the application has to be selected.
+Mark the corresponding symbol by clicking on the button <span class="label">1</span>.
+Once selected, the reset symbol can not be included in the input alphabet.
+
+
 ## Configuration
 
-- modal window
+The next step is the configuration of the learning process.
+A click on the button with the gear icon at <span class="label">2</span> opens the modal window that is displayed below.
 
-<div class="alert alert-info">
-    The usage of the TTT algorithm is generally preferred from a users view as it outperforms the other algorithms in terms of speed. 
-    Furthermore, the default eq oracle configuration should be adjusted as it is chosen like it is for very small applications.
-</div>
+![Setup](assets/setup/learning-setup-2.jpg)
+
+Here, in the tab *"Learner"* (left), select a learning algorithm first.
+Per default, the *TTT* algorithm is preselected because it usually performs better than the other available options.
+
+Then, configure the equivalence approximation strategy:
 
 <dl>
     <dt>Random Word</dt>
@@ -43,4 +54,21 @@ Such a process always consists of the following components:
         Uses an ideal model of an application to search for differences and uses them as counterexamples.
         Note that the input alphabets should be the same.
     </dd>
-</dl>  
+</dl>
+
+The input field for the maximum amount of steps to learn indicates how many intermediate hypotheses the learner has to generate before the learning process is stopped.
+The value *-1* means that the learner stops if no more counterexample is found.
+Another value, for example 3, would stop the learner after having generated three hypotheses, although this might not be the final one.
+Of cause, if the final hypothesis is learned before those three steps, the learner stops beforehand.
+This way, it is possible to e.g. learn the first three steps with a randomized equivalence oracle and then continue learning with another one.
+
+In the *WebDriver* tab (right) you can configure which web browser is used for accessing the target web application during the learning process.
+Each web driver has individual options which are displayed once you select a web browser from the select input.
+
+<div class="alert alert-info">
+    Xvfb is used for Linux enviroments where no phyiscal screen is present.
+    Thus, this option can not be used if ALEX runs on a Windows machine.
+</div>
+
+Save the configuration with a click on the *Save* button.
+Finally, click on the *Start learning* button in the button group <span class="label">2</span> to start the learning process.
