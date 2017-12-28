@@ -33,7 +33,7 @@ Adjust the URL and the symbol sets accordingly.
 #### Prepare ALEX
 
 1. Start ALEX and login
-2. In the left menu, click on the item *App settings* and setup the path to a webdriver executable (preferable chrome)
+2. In the left menu, click on the item *App settings* and setup the path to a web driver executable (preferable Chrome)
 3. Hit the *Save* button
 
 #### Setup a TodoMVC project

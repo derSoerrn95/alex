@@ -69,7 +69,7 @@ The selector, and in some cases other data is automatically inserted into the co
 ## Selecting Elements in the Browser
 
 If you encounter issues with the element picker, you can also use your favourite web browser to get the selectors of elements.
-Here, the usage of **Google Chrome** for this is demonstrated, but the procedure can be transferred to other web browsers as well.
+Here, the usage of **Chrome** for this is demonstrated, but the procedure can be transferred to other web browsers as well.
 
 ![Chrome 1](assets/element-picker/chrome-1.jpg)
 

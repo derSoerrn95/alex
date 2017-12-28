@@ -2,6 +2,7 @@
 
 Projects are the entities that are used to manage multiple target applications in ALEX. 
 You can, for example, create a project for your application in version *x* and another one for version *x+1* while having a different sets of input symbols.
+A project is bound to the user that created it and can not be shared between other users.
 
 After the login, you will see an overview of all created projects like depicted below.
 

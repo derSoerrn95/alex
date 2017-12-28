@@ -1,10 +1,10 @@
-# Learning
+# Learning Setup
 
 In order to start learning an application, a learn process has to be modeled. 
 Such a process always consists of the following components:
 
 * An input alphabet (set of symbols)
-* A symbol to reset the application
+* A symbol to reset the application (see [this section](../../best-practices/README.md#resetting-an-application))
 * A learning algorithm
 * A parametrized equivalence oracle
 * A maximum amount of steps to learn

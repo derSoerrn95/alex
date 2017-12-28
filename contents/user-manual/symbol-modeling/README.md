@@ -1,7 +1,7 @@
 # Symbol Management
 
 The modelling of input symbols is a key aspect of using ALEX.
-They define interactions with the system under learning and thus are the building blocks of every learning process.
+They define interactions with the system under learning and thus are the building blocks of every learning process and test case.
 
 ![Symbols](assets/symbols-1.jpg)
 

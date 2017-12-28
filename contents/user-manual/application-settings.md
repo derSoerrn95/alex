@@ -21,7 +21,8 @@ You can also define a browser which is used for testing and learning per default
 Therefore, a dropdown menu on the bottom of the page <span class="label">2</span> lets you select a web browser.
 Don't forget to save the changes you have made <span class="label">3</span>.
 
-It goes without saying that using the Edge browser on Linux and MacOS is not supported, and also Safari is not supported on Linux and Windows systems.
+Further, using the Edge browser on Linux and MacOS is not supported, and also Safari is not supported on Linux and Windows systems.
+The option is still visible, but using a web browser on an operating system that does not support it will result in errors.
 
 [selenium]: http://www.seleniumhq.org/
 [htmlunit]: http://htmlunit.sourceforge.net/

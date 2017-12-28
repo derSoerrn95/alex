@@ -142,8 +142,8 @@ From there on, the following URLs lead to different aspects of the application.
 | /tests/&lt;id&gt;                   | Edit the test suite or test case with a given ID          |
 | /users/settings                     | Edit the profile of the user that is logged in            |
 
-Except for the *"about"*, *"help"*, *"error"* and the *"home"* page, all routes require that a user is logged in and a project has been created and is opened.
-Routes that are prefixed with */admin* can only be accessed by users that inhibit the *ADMIN* role.
+Except for the *"about"*, *"help"*, *"error"* and the *"home"* page, all URLs require that a user is logged in and a project has been created and is opened.
+URLs that are prefixed with */admin* can only be accessed by users that inhibit the *ADMIN* role.
 
 [learnlib]: https://learnlib.de/
 [learnlibStudio]: http://ls5-www.cs.tu-dortmund.de/projects/learnlib/download.php
