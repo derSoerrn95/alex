@@ -30,19 +30,48 @@ The file for (3) may look like this:
 ```json
 // config.testing.json
 {
-  "browser": "chrome",
-  "width": 1280,
-  "height": 720,
-  "headless": true
+  "name": string,
+  "width": number,
+  "height": number,
+  "implicitlyWait": number,
+  "pageLoadTimeout": number,
+  "scriptTimeout": number
 }
 ```
 
-| Property      | Description                                                                                               |
-|---------------|-----------------------------------------------------------------------------------------------------------|
-| `browser`     | The browser to run the tests in. Allowed values: *chrome, edge, firefox, html_unit, remote, safari*       |
-| `width`       | The width of the browser. If set to 0, the default width is used.                                         |
-| `height`      | The height of the browser. If set to 0, the default width is used.                                        |
-| `headless`    | If the browser should run in headless mode. Make sure the browser supports that. It is ignored otherwise. |               
+```json
+// name is "chrome" or "firefox"
+{
+  ...,
+  "headless": boolean,
+  "xvfb": number
+}
+```
+
+```json
+// name is "remote"
+{
+  ...,
+  "platform": string,
+  "browser": string,
+  "version": string
+}
+```
+
+| Property          | Description                                                                                               |
+|-------------------|-----------------------------------------------------------------------------------------------------------|
+| `name`            | The browser to run the tests in. Allowed values: *chrome, edge, firefox, html_unit, remote, safari*       |
+| `width`           | The width of the browser. If set to 0, the default width is used.                                         |
+| `height`          | The height of the browser. If set to 0, the default width is used.                                        |
+| `implicitlyWait`  | Selenium implicit timeout in \[s\] >= 0                                                                   |
+| `pageLoadTimeout` | Selenium page load timeout in \[s\] > 0                                                                   |
+| `scriptTimeout`   | Selenium script timeout in \[s\] > 0                                                                      |
+| `headless`        | If the browser should run in headless mode. Make sure the browser supports that. It is ignored otherwise. |
+| `xvfb`            | The port number for the virtual frame buffer in case headless mode is not supported.                      |
+| `platform`        | The platform to run the tests on. \[ANY, WINDOWS, WIN_10, WIN8_1, WIN8, VISTA, XP, MAC, SIERRA, EL_CAPITAN, YOSEMITE, MAVERICKS, MOUNTAIN_LION, SNOW_LEOPARD, LINUX, UNIX\] |
+| `browser`         | The browser to execute tests in. \[chrome, MicrosoftEdge, firefox, htmlunit, iexplore, operablink, safari\] |
+| `version`         | The browser version.                                                                                      |
+             
 
 The cli itself can be found at *cli/src/main/javascript*.
 Here, execute `node alex-cli.js -h` to get a list of all parameters.
@@ -70,33 +99,22 @@ An example configuration file would look like this:
 // config.learning.json
 {
 	"algorithm": {
-		"name": "TTT"
+		"name": string
 	},
-	"browser": {
-		"driver": "chrome",
-		"width": 1280,
-        "height": 720,
-		"headless": true
-	},
-	"comment" : "",
-	"eqOracle": {
-		"type": "random_word",
-		"minLength": 1,
-		"maxLength": 1,
-		"maxNoOfTests": 1,
-		"seed": 42
-	},
-	"maxAmountOfStepsToLearn" : -1,
-	"resetSymbol": "Reset",
-	"symbols": ["Search Term", "Website in Results?", "Next Page"],
-	"useMQCache": true
+	"browser": BrowserConfig,
+	"comment" : string,
+	"eqOracle": EqOracle,
+	"maxAmountOfStepsToLearn" : number,
+	"resetSymbol": string,
+	"symbols": string[],
+	"useMQCache": boolean
 }
 ```
 
 | Property                  | Description                                                                                                                       |
 |---------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
 |`algorithm`                | The algorithm to use. The name may be one of the following values: *DHC, DT, KEARNS_VAZIRANI, LSTAR, TTT*.                        |
-|`browser`                  | Analogue to above.                                                                                                                |
+|`browser`                  | See above.                                                                                                                |
 |`comment`                  | A comment for the process.                                                                                                        |
 |`eqOracle`                 | The equivalence oracle to use.                                                                                                    |
 |`maxAmountOfStepsToLearn`  | After which step the learner should stop learning. *-1* means never.                                                              |
@@ -116,6 +134,4 @@ node alex-cli.js --uri "http://localhost:8000" \
 ```
 
 where the parameter *-t* is omitted.
-Note that, contrary to testing, the project is not deleted.
 Once ALEX has finished learning an application, the control is given back to the user.
-Since the results of a learning process are not really readable on the command line, a user has to look a the results via the frontend of ALEX.
