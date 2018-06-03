@@ -1,10 +1,11 @@
 # Learning Wordpress
 
-_This is a step by step instruction on how to test the REST API of Wordpress 4.4 with ALEX_
+This is a step by step instruction on how to test the REST API of Wordpress 4.4 with ALEX v1.3.0.
 
 <div class="alert alert-info">
-    There is a more up-to-date version of Wordpress and the REST API plugin out there. We do not garantie that this
-    tutorial still works.
+    This example is not compatible with ALEX v1.5.0.
+    There is a more up-to-date version of Wordpress and the REST API plugin out there. 
+    We do not garantie that this tutorial still works.
 </div>
 
 ## Prepare Wordpress
@@ -35,7 +36,7 @@ _This is a step by step instruction on how to test the REST API of Wordpress 4.4
 
 _The base64 encoded combination of username and password is only required for modelling new symbols that require authentication._
 
-## Start a learn process
+## Start a learning process
 
 1. Start ALEX under a different port than 8000
 2. Login as a user

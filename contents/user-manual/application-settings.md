@@ -1,4 +1,4 @@
-# Application Settings
+# Application settings
 
 There are some global, application specific settings that only users with admin rights have access to.
 
@@ -19,10 +19,17 @@ Then, change the permissions of the file e.g. like `chmod +x chromedriver`.
 
 You can also define a browser which is used for testing and learning per default.
 Therefore, a dropdown menu on the bottom of the page <span class="label">2</span> lets you select a web browser.
-Don't forget to save the changes you have made <span class="label">3</span>.
+Do not forget to save the changes you have made <span class="label">3</span>.
 
 Further, using the Edge browser on Linux and MacOS is not supported, and also Safari is not supported on Linux and Windows systems.
 The option is still visible, but using a web browser on an operating system that does not support it will result in errors.
+
+
+## User registration
+
+If you have ALEX installed in your network, you may not that the registration process is available to anyone.
+You can enable and disable public user registration by checking or unchecking the provided input.
+Be aware that you, as an admin, can also create new users manually in the user management.
 
 [selenium]: http://www.seleniumhq.org/
 [htmlunit]: http://htmlunit.sourceforge.net/

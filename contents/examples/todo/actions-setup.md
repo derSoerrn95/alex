@@ -1,4 +1,4 @@
-# Action Setup
+# Action setup
 
 ![Create Action Link](../../../assets/images/examples/todo/manage_symbols_arrow_actions.jpg)
 
@@ -9,7 +9,7 @@ Via actions that are assigned to the symbol, we have to reach that state.
 
 ![Create Action Link](../../../assets/images/examples/todo/action_overview_arrow_create.jpg)
 
-Therefore, click on the link under the correspondent action to open the view for managing actions of a symbols. 
+Therefor, click on the link under the correspondent action to open the view for managing actions of a symbols. 
 At first, no actions are created. 
 To create the first action, click on the __Create__ in the top bar which results in a new modal window which displays the action editor.
 
@@ -65,5 +65,5 @@ You can safely remove and reorder via drag-and-drop.
 
 ![Action Saved](../../../assets/images/examples/todo/action_overview_saved.jpg)
 
-For practice, You can now continue to model all remaining symbols on your own.
+As a practice, you can now continue to model all remaining symbols on your own.
 

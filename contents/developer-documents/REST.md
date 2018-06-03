@@ -1,23 +1,18 @@
-# REST Documentation
+# REST documentation
 
-The server offers a [REST API](http://en.wikipedia.org/wiki/Representational_state_transfer) to manage the functionalities of ALEX.
-The documentation of this API can be found at *"/restdocs/"* on your running server, e.g. http://localhost:8000/restdocs.
+ALEX offers a [REST API](http://en.wikipedia.org/wiki/Representational_state_transfer) to access its features.
+The documentation of this API can be found at *"/restdocs/"* on your running server, e.g. *http://localhost:8000/restdocs*.
 
 ## Swagger
 
 To create this documentation, a tool called [Swagger](http://swagger.io/) is used together with
-[an JavaDoc doclet](https://github.com/Carma-Public/swagger-jaxrs-doclet) which creates the files for swagger based on
+[a JavaDoc doclet](https://github.com/Carma-Public/swagger-jaxrs-doclet) which creates the files for swagger based on
 the code and some extra information in the JavaDoc.
 
 ![Swagger](assets/swagger.jpg)
 
 To test REST resources which require an active user, please use the login method (which does not need an active user)
 and copy the returned token into the *api_key* field on the top of the page.
-
-Please notice: The swagger specification and the doclet both support inheritance of model classes, but the swagger-ui is 
-incapable to render this information
-(there are [several](https://github.com/swagger-api/swagger-ui/issues/300) 
-[issues](https://github.com/swagger-api/swagger-ui/issues/1526) about that).
 
 ## Actions
 
@@ -34,7 +29,7 @@ Every action has these attributes:
 }
 ```
 
-### Web Actions
+### Web actions
 
 ```json
 {
@@ -250,7 +245,7 @@ Every action has these attributes:
 }
 ```
 
-### Rest Actions
+### Rest actions
 
 ```json
 {
@@ -309,7 +304,7 @@ Every action has these attributes:
 }
 ```
 
-### Variable/ Counter Actions
+### Variable / counter actions
 
 ```json
 {
@@ -415,7 +410,7 @@ Every action has these attributes:
 }
 ```
 
-### Misc. Actions
+### Misc. actions
 
 ```json
 {

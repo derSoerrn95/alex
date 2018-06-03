@@ -15,9 +15,8 @@ Maybe, login once and play around a little to get a feel of the application befo
 
 ## Setup ALEX
 
-To setup alex, in the terminal, navigate to where the [ALEX-\*.\*.war][1] is located and execute `java -jar alex.war --port 8000`,
-wait a moment and open `http://localhost:8000` in a web browser. 
-You should see the index page where you are asked to login or create a new account.
+Follow the installation instructions for ALEX. See [here](../../../README.md).
+The start page of ALEX looks like this:
 
 ![Welcome Screen](../../../assets/images/examples/todo/welcome_screen.jpg)
 
@@ -25,9 +24,7 @@ You should see the index page where you are asked to login or create a new accou
 
 ![Login Process](../../../assets/images/examples/todo/login_process.jpg)
 
-Create a new account or alternatively authenticate with the admin account using _admin@alex.example_ as email and _admin_ as password.
-Press the login-button to finish the login process which leads to the projects overview on success.
+Create a new account or alternatively authenticate with the default admin account.
+Press the *login* button to finish the login process which leads to the projects overview on success:
 
 ![Dashboard](../../../assets/images/examples/todo/home_empty.jpg)
-
-[1]: https://github.com/LearnLib/alex/releases/download/v1.0/ALEX-1.0.war

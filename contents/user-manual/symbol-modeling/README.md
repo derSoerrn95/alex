@@ -1,4 +1,4 @@
-# Symbol Management
+# Symbol management
 
 The modelling of input symbols is a key aspect of using ALEX.
 They define interactions with the system under learning and thus are the building blocks of every learning process and test case.
@@ -8,7 +8,7 @@ They define interactions with the system under learning and thus are the buildin
 Once you have logged in and opened a project, click on <span class="label">1</span> to open the view for the symbol management.
 
 
-## Symbol Groups
+## Symbol groups
 
 Symbol groups are logical container for symbols.
 Per default, there is a default group that is created during the creation of the project.
@@ -35,7 +35,7 @@ Each symbol contains of a sequence of actions, that are managed in a separate vi
 Click on the link below the symbol name or the item *Actions* in menu <span class="label">3</span> to open the action management for the symbol, which is covered in [this section](actions.md).
 
 
-### Restoring Deleted Symbols
+### Restoring deleted symbols
 
 Once you delete a symbol, it is not really removed from the database.
 Instead, they are put into the symbol trash bin, which works similar to its equivalent from various operating systems.
@@ -48,7 +48,7 @@ The only operation you can do here is to recover deleted symbols.
 A recovered symbol is then moved into the default group.
 
 
-### Export & Import
+### Export & import
 
 If you want to save a set of symbols for another project or use existing ones, ALEX offers an export and import feature.
 Note that existing symbol groups are not exported in order to be compatible with other projects.
