@@ -1,10 +1,10 @@
-# Learning Experiment Analysis
+# Learning experiment analysis
 
 Each learning process experiment and its results, including the models, statistics etc. are saved in the database. 
 This section deals with possibilities to use the learned models for a further analysis.
 
 
-## Comparing Hypotheses
+## Comparing hypotheses
 
 ![Comparing 1](assets/analysis/results-compare-1.jpg)
 

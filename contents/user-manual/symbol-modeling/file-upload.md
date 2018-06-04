@@ -24,4 +24,9 @@ Once the upload is completed, the files are displayed in a list.
 ![Files 4](assets/file-upload/4.jpg)
 
 In order to upload a specific file to the target application, create a *fill input* action and insert the selector of the corresponding input field.
-As the value, enter `{{\filename.ext}}` where *filename.ext* should be the exact name of the file you uploaded to ALEX.
+As the value, enter **\{\{\\filename.ext\}\}** where *filename.ext* should be the exact name of the file you uploaded to ALEX.
+
+## Downloading files
+
+Once you have uploaded a file, you can also download it again.
+Therefor, click on the corresponding menu item in the dropdown menu of a file.

@@ -9,7 +9,7 @@ Per default, only the headless WebDriver [HTMLUnit][htmlunit] and [Safari][safar
 Note that Safari is only supported if ALEX is running on a MacOS system. 
 Otherwise, the option is still displayed, but will not work for testing or learning.
 
-![Settings](assets/application-settings/webdrivers.jpg)
+![Settings](assets/application-settings/settings-1.jpg)
 
 For other web browsers, namely [Chrome][chrome], [Firefox][firefox] and [Edge][edge], driver executables have to be downloaded.
 We provide links to the download pages, but you have to make sure that the version of the executable supports the version of the web browser you have installed.
@@ -27,8 +27,10 @@ The option is still visible, but using a web browser on an operating system that
 
 ## User registration
 
+![Settings](assets/application-settings/settings-2.jpg)
+
 If you have ALEX installed in your network, you may not that the registration process is available to anyone.
-You can enable and disable public user registration by checking or unchecking the provided input.
+You can enable and disable public user registration by checking or unchecking the provided input on the bottom of the page.
 Be aware that you, as an admin, can also create new users manually in the user management.
 
 [selenium]: http://www.seleniumhq.org/

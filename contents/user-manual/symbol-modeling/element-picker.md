@@ -21,7 +21,7 @@ For example, the first link has an ID, so the selector would simply be `#link`.
 The second link does not have an ID, so the selector corresponds to the path from the body (or a parent element with an ID) to that element.
 Here, the selector for the second link would be `body > div:nth-child(1) > a:nth-child(2)` which reads as *the second direct child "a" node in the first direct child "div" node of the body*.
 
-As you can imagine, websites are not necessarily structured that simple, and elements are nested deeply.
+As you can imagine, websites are not necessarily structured that simple and elements are nested deeply.
 The deeper an element that has no ID is in the tree, the longer and therefore more complex the selector to that element might be.
 Writing these selectors by hand is error prone and unnecessary hard.
 
@@ -45,7 +45,7 @@ In order to use the element picker as intended, follow the following instruction
 
 ![Element Picker 3](assets/element-picker/element-picker-3.jpg)
 
-Finally, the element picker will look like above.
+Finally, the element picker will look like displayed above.
 Start the selection by clicking on the button with the toggle icon <span class="label">2</span>.
 The button on the right lets you switch between the CSS selector and an equivalent XPath expression.
 
@@ -66,7 +66,7 @@ The selector, and in some cases other data is automatically inserted into the co
 [cors-everywhere]: https://addons.mozilla.org/de/firefox/addon/cors-everywhere/
 
 
-## Selecting Elements in the Browser
+## Selecting elements in the web browser
 
 If you encounter issues with the element picker, you can also use your favourite web browser to get the selectors of elements.
 Here, the usage of **Chrome** for this is demonstrated, but the procedure can be transferred to other web browsers as well.

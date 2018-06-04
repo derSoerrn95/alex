@@ -22,10 +22,10 @@ Once a group has been created, you can edit and delete it, by clicking on the *g
 
 When creating a new symbol (see <span class="label">2</span>), you have to specify two properties:
 
-| Name          | Description                                                                                  |
-|---------------|----------------------------------------------------------------------------------------------|
-| name          | A unique name of the symbol                                                                  |
-| symbol group  | The group in which the symbol is put. Per default, the default group of the project is used. |
+| Name          | Description                                                                             |
+|---------------|-----------------------------------------------------------------------------------------|
+| Name          | A unique name of the symbol                                                             |
+| Symbol group  | The group the symbol belongs to. Per default, the default group of the project is used. |
 
 Once the symbol has been created successfully, it appears in the specified group.
 For each symbol, there is a list of operations that are accessible by clicking on the menu <span class="label">3</span> of which most are self explanatory.
@@ -35,16 +35,23 @@ Each symbol contains of a sequence of actions, that are managed in a separate vi
 Click on the link below the symbol name or the item *Actions* in menu <span class="label">3</span> to open the action management for the symbol, which is covered in [this section](actions.md).
 
 
-### Restoring deleted symbols
+### Searching symbols
 
-Once you delete a symbol, it is not really removed from the database.
-Instead, they are put into the symbol trash bin, which works similar to its equivalent from various operating systems.
-The only difference is that symbols cannot be deleted permanently, because they still might be referenced by e.g. learner results or test cases you have modeled.
+![Search](assets/symbols-search.jpg)
 
-![Symbols trash bin](assets/symbols-trash-bin.jpg)
+Directly below the action bar, a search input is displayed which you can use to quickly find symbols.
+A click on a result redirects you to the symbol page.
 
-You can see all deleted symbols in the trash bin overview which can be accessed via the item *Trash* in the sidebar.
-The only operation you can do here is to recover deleted symbols.
+
+### Restoring archived symbols
+
+Once you archived a symbol, it is not really removed from the database, instead, they are put into the symbol archived.
+Symbols cannot be deleted permanently, because they still might be referenced by e.g. learner results or test cases you have created.
+
+![Symbols trash bin](assets/symbols-archive.jpg)
+
+You can see all archived symbols in the archive overview which can be accessed via the item *Archive* in the sidebar.
+Here you can do here is to recover symbols or edit their name.
 A recovered symbol is then moved into the default group.
 
 
@@ -57,15 +64,26 @@ Note that existing symbol groups are not exported in order to be compatible with
 
 In order to export symbols, select the corresponding symbols in the overview and click on the export button <span class="label">1</span>.
 You are then asked for name of the JSON file which will be downloaded.
+Additionally, you can decide if only the selected symbols are exported, or if the symbol groups that they are in are exported as well.
 
 ![Import 1](assets/import-1.jpg)
 
 In the same view, you can import existing symbols from a JSON file by clicking on <span class="label">2</span> which opens a modal window.
-
-![Import 2](assets/import-2.jpg)
-
-Here, drag and drop the JSON file into the field <span class="label">3</span> and the symbols will be displayed below.
+Here, drag and drop the JSON file you exported in the previous step.
 The import will not work unless the names of the symbols are unique within the project.
-So, edit the symbol names <span class="label">4</span> or delete the ones you do not need.
-Finally, confirm your selection by clicking on <span class="label">5</span>.
 If everything goes fine, the modal window will close automatically and the symbols appear in the default group.
+
+
+### Symbol parameters
+
+![Parameters](assets/symbol-parameters-2.jpg)
+
+Symbols have input and output parameters for variables and counters (see next section for more information).
+
+![Parameters](assets/symbol-parameters-1.jpg)
+
+Variables and counters are read from and written into and a global store, see image above.
+Before a variable or counter can be used in a symbol, it has to be defined in as input parameter for the symbol.
+Local modifications of variables and counters do not affect the global context unless they are written back as output.
+
+If you use a variable or a counter that has not been defined, the execution of the symbols fails and the output is: *Undefined variable: Name*, or *Undefined counter: Name* respectively.

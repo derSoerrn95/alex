@@ -29,7 +29,7 @@ From here on, you can, if you find it necessary, configure how the learning proc
 You can also select the equivalence oracle *Sample* and search for counterexamples by yourself, which is explained in the following.
 
 
-## Finding Counterexamples Manually
+## Finding counterexamples manually
 
 Beside automated strategies for finding counterexamples, there is the option to search for counterexamples by hand directly on a model.
 
@@ -44,7 +44,7 @@ After that, click on <span class="label">1</span> to check if the word actually 
 If this is the case, a notification will pop up and the actual system output of the word will be displayed at <span class="label">3</span>.
 Finally, click on the *Resume* button to initiate the refinement of the model given your counterexample.
 
-## Resuming a Previous Learning Process
+## Resuming a previous learning process
 
 The learning process usually takes a lot of time when learning models from web applications.
 The more annoying it is if the learning process is interrupted due to various reasons and you have to start learning from the beginning.
@@ -70,7 +70,7 @@ Finally, click on <span class="label">3</span> to resume the learning process.
 You can even add additional input symbols that should be included in the next iteration of the learning process by selecting them in <span class="label">4</span>.
 
 
-## Restrictions While Learning
+## Restrictions while learning
 
 While ALEX is learning there are some restrictions concerning the functionality:
 

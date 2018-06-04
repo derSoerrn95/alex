@@ -8,7 +8,7 @@ After the login, you will see an overview of all created projects like depicted 
 
 ![Overview](assets/project-management/overview.jpg)
 
-## Creating, editing and deleting Projects
+## Creating, editing and deleting projects
 
 In order to create a new project, fill out the form on the left. 
 A new project has the following properties:
@@ -16,7 +16,7 @@ A new project has the following properties:
 | Field       | Description                                                                            | Required |
 |-------------|----------------------------------------------------------------------------------------|----------|
 | Name        | A unique name for your project.                                                        | yes      |
-| URLs        | URLs where the target is reachable. At least one URL is required.                      | no       |
+| URLs        | URLs where the target is reachable. At least one URL is required.                      | yes      |
 | Description | A description of your project.                                                         | no       |
 
 The URL of a new project has to start with *http://* or *https://* followed by at least one further character for the host. 
@@ -24,6 +24,7 @@ The URL can, but does not have to end with a trailing '/'.
 For performance reasons, a local installation of the target application is recommended.
 
 You can specify more than one URL if you have multiple instances of the same applications.
+One of the URLs has be specified as *Default URL* which is used by default when learning or executing tests.
 This is useful for parallelizing aspects of the learning process, thus, making it faster.
 It is important that these replications do not share the same state, e.g. have their own database.
 
