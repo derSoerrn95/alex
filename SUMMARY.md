@@ -14,6 +14,7 @@
 	    * [Analysis](contents/user-manual/learning/analysis.md)
 	    * [Counters](contents/user-manual/learning/counters.md)
 	* [Testing](contents/user-manual/testing.md)
+	* [Integrations](contents/user-manual/integrations.md)
 * [Examples](contents/examples/README.md)
     * [ToDo](contents/examples/todo/README.md)
         * [Installation](contents/examples/todo/installation.md)

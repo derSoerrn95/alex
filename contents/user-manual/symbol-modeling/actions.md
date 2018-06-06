@@ -41,7 +41,7 @@ The option for this can be found in the dropdown menu on the right of each actio
 In the next sections, we go a little deeper into the single categories of actions.
 
 
-## Web Actions
+## Web actions
 
 Web actions are used to interact with a browser interface like a normal user would. 
 They are based on Selenium and ALEX offers a subset of the Selenium functionality that are presented in the table below.
@@ -51,8 +51,10 @@ They are based on Selenium and ALEX offers a subset of the Selenium functionalit
 | Alert - Accept/Dismiss | Accepts or dismisses an alert dialog.                                        |
 | Alert - Get Text       | Save the displayed text of an alert/confirm/prompt window in a variable.     |
 | Alert - Send keys      | Send user input to a prompt alert.                                           |
+| Browser                | Refresh or restart the browser instance.                                     |
 | Check Attribute        | Checks the value of an attribute of an element                               |
 | Check Node             | Check if a certain element is present on the website.                        |
+| Check Node Selected    | Check if a radio button, a checkbox or an option in a select box is selected.|
 | Check Text             | Check if a certain text is part of the website body.                         |
 | Check Title            | Checks if the page title is a certain string.                                |
 | Clear                  | Clear an input field.                                                        |
@@ -81,7 +83,7 @@ This is a special feature of ALEX for extracting selectors elements from your we
 Visit [this section](element-picker.md) to see how the use the element picker.
 
 
-## REST Actions
+## REST actions
 
 REST actions are the counterpart to web actions. They are used to communicate with REST APIs. 
 The table below shows a list of available actions.
@@ -104,7 +106,7 @@ Start with a *Make Request* action and use other actions to work with the respon
 The context of the *Make Request* action, namely the HTTP response, is passed to the following actions until the next *Make Request* action is made.
 
 
-## General Actions
+## General actions
 
 Actions of this group allow the interaction between different symbols and actions, for example by storing and passing String and Integer values to other actions.
 
@@ -117,18 +119,15 @@ Actions of this group allow the interaction between different symbols and action
 | Set Variable                   | Set a variable to a new value.                                      |
 | Set Variable by Cookie         | Set a variable to the value of a cookie                             |
 | Set Variable by HTML Element   | Set a variable to a value form a website element.                   |
+| Set Variable by HTTP Response  | Set a variable to the body of a HTTP response.                      |
 | Set Variable by JSON Attribute | Set a variable to a value form a JSON response.                     |
 | Set Variable by Node Attribute | Set a variable to the value of an attribute of an element.          |
 | Set Variable by Node Count     | Set a variable to the number of elements matching a selector.       |
 | Set Variable by Regex Group    | Set a variable to a group in a regex match.                         |
 | Wait                           | Wait for a specific amount of time.                                 |
 
-<div class="alert alert-info">
-    The wait action can be useful for background tasks or AJAX calls, but should be used with caution because it can slow down the learn process.
-</div>
 
-
-## Variables, Counters and Files
+## Variables, counters and files
 
 Many web applications handle dynamic data and allow file uploads. 
 In order to model and learn such behaviors and to pass data between symbols, actions and learn processes, *variables*, *counters* and *files* can be used.

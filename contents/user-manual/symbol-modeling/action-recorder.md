@@ -1,4 +1,4 @@
-# Recording Actions
+# Recording actions
 
 ALEX also supports recording actions directly on the target website without leaving the element picker.
 Therefore, click on the button *Record* <span class="label">1</span> in the symbol overview.
@@ -7,6 +7,7 @@ Therefore, click on the button *Record* <span class="label">1</span> in the symb
 
 An overlay pops up that looks like the element picker, except that on the left, there is space for a list of recorded actions.
 In order to start recording, click on the button <span class="label">2</span> that enables and disables the recording.
+Note that since the recorder uses the same technology as the element picker, web browsers have to be started with disabled security rules, too.
 
 ![Recorder 1](assets/action-recorder/2.jpg)
 

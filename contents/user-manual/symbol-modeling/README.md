@@ -71,7 +71,7 @@ Additionally, you can decide if only the selected symbols are exported, or if th
 In the same view, you can import existing symbols from a JSON file by clicking on <span class="label">2</span> which opens a modal window.
 Here, drag and drop the JSON file you exported in the previous step.
 The import will not work unless the names of the symbols are unique within the project.
-If everything goes fine, the modal window will close automatically and the symbols appear in the default group.
+If everything goes fine, the modal window will close automatically and the symbols appear in the selected group.
 
 
 ### Symbol parameters
@@ -82,7 +82,7 @@ Symbols have input and output parameters for variables and counters (see next se
 
 ![Parameters](assets/symbol-parameters-1.jpg)
 
-Variables and counters are read from and written into and a global store, see image above.
+Variables and counters are read from and written into and a global store during a membership query, see the image above.
 Before a variable or counter can be used in a symbol, it has to be defined in as input parameter for the symbol.
 Local modifications of variables and counters do not affect the global context unless they are written back as output.
 

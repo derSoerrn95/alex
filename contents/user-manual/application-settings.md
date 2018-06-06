@@ -29,7 +29,7 @@ The option is still visible, but using a web browser on an operating system that
 
 ![Settings](assets/application-settings/settings-2.jpg)
 
-If you have ALEX installed in your network, you may not that the registration process is available to anyone.
+If you have ALEX installed in your network, you may not want the registration process to be available for anyone.
 You can enable and disable public user registration by checking or unchecking the provided input on the bottom of the page.
 Be aware that you, as an admin, can also create new users manually in the user management.
 

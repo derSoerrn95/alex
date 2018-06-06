@@ -1,4 +1,4 @@
-# Uploading Files
+# Uploading files
 
 A special functionality we want to present here is the upload of files to the target application via an action, since there is no dedicated action for that.
 For this to work, two requirements have to be met:

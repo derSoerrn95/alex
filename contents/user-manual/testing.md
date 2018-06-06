@@ -13,45 +13,43 @@ Test cases are indicated by a file icon, test suites by a folder icon.
 ![Testing](assets/testing/testing-1.jpg)
 
 The option to create a test case or a test suite is available in the dropdown menu <span class="label">1</span>.
+The name of a test case has to be unique within the parent test suite.
+This means that it is possible to have multiple test cases with the same name as long as they are in different groups.
+
 Via <span class="label">2</span>, you can navigate directly in the test suite.
-Clicking on a test case redirects you to a view where the test case can be modelled, which is covered in the following.
+Clicking on a test case redirects you to a view where the test case can be modelled, which is covered in the next section.
+<span class="label">3</span> allows you to copy and paste test cases and test suites.
+
+For executing tests setup more quickly, select the tests you want to execute and save the current configuration with <span class="label">4</span>.
 
 
-## Test Cases
+## Test cases
 
 ![Testing](assets/testing/testing-2.jpg)
 
-Here, you can create a sequence of symbols by clicking on the symbols that are displayed in their groups on the left.
-Once you have created a test case, you can rearrange the symbols via drag and drop.
-Clicking on <span class="label">1</span> navigates you to the parent test suite.
-With <span class="label">2</span> you can specify if the test case is supposed to pass or if it is supposed to fail.
-The end result of the test case execution can be taken from the following table:
+Once you are in the view for a single test case, you can navigate to the parent test suite by clicking on <span class="label">1</span>.
 
-| Test passes? | Should pass? | Result |
-|--------------|--------------|--------|
-| yes          | yes          | pass   |
-| yes          | no           | fail   |
-| no           | yes          | fail   |
-| no           | no           | pass   |
+In order to model the test, click together a sequence of symbols from the symbol tree on the left.
+You can always reorder the symbols in the test by drag-and-drop.
+
+If a symbol has input parameters defined, they are displayed here, too (see <span class="label">2</span>).
+At first, they are assigned a null value which indirectly means that the values are read from the global data context that is created during the execution of the test.
+If you specify a value yourself, that value overwrites the value from the global context.
+
+A test always has to pass.
+It fails if one of its steps fails and the steps after the failed step are not executed.
+You can however specify with <span class="3"></span> that a step should fail.
+In the example above, we specify that the last step *Read ToDo* should fail because after having deleted a todo, it should not be visible anylonger.
+As a result, the test passes.
+
+You can execute the test by clicking on <span class="4"></span> and configure the execution with the button with the gear icon on the right.
+Before the execution, save any changes first so the the current version of your test is executed.
+Note that if you execute the test here, no report is created.
+
+
+## Executing tests
 
 ![Testing](assets/testing/testing-3.jpg)
-
-A click on the small button with the gear icon in the button group <span class="label">3</span> opens a modal window where you can configure the web driver you want to execute the test in.
-Make sure you save any changes you have made before executing a test case.
-Then, execute the test case by clicking on the *Execute* button.
-
-When the test case has been executed, a small notification appears telling if the execution succeeded or failed.
-Furthermore, the output of every symbol is also displayed.
-
-![Testing](assets/testing/testing-4.jpg)
-
-You can notice another tab on the page labeled *Variables* <span class="label">4</span>.
-There, you can preconfigure variables that are used by the symbols in the test case, so that you do not have to create a reset symbol that sets them for each test case individually.
-
-
-## Test Execution
-
-![Testing](assets/testing/testing-5.jpg)
 
 Back in the overview, select the test cases and test suites that should be executed.
 The button group <span class="label">1</span> behaves like in the test case view.

@@ -35,7 +35,7 @@ Beside automated strategies for finding counterexamples, there is the option to 
 
 ![Sample](assets/learning/sample-1.jpg)
 
-Therefore, select the equivalence oracle *Sample* from the select input in the sidebar.
+Therefor, select the equivalence oracle *Sample* from the select input in the sidebar.
 Then, click together a word by clicking on the edge labels of the hypothesis.
 After that, click on <span class="label">1</span> to check if the word actually is a counterexample.
 
