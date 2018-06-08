@@ -10,7 +10,7 @@ If you find bugs of any kind relating this application or inaccuracies in this m
 
 ALEX offers a simplicity-oriented way to model and execute learning experiments for web applications and web services using active automata learning. 
 With version 1.5.0 ALEX has been extended to support conventional testing, too.
-Based on the function set the [LearnLib][learnlib] and inspired by the [LearnLib Studio][learnlibStudio], ALEX lays a focus on the ease to use of the tool while offering an extensive feature set, including:
+Based on features of [LearnLib][learnlib] and inspired by the [LearnLib Studio][learnlibStudio], ALEX lays a focus on the ease to use of the tool while offering an extensive feature set, including:
 
 * Inferring Mealy machines of web applications and web services using active automata learning techniques
 * Graphical symbol and learning process modelling
@@ -20,8 +20,8 @@ Based on the function set the [LearnLib][learnlib] and inspired by the [LearnLib
     * Statistics of learning experiments
 * Simultaneous learning of web applications and web services
 * Various learning algorithms and equivalence approximation strategies
-* Integration testing capabilities
-* And many more...
+* GUI testing capabilities
+* And much more...
 
 
 ## Required skills
@@ -29,7 +29,7 @@ Based on the function set the [LearnLib][learnlib] and inspired by the [LearnLib
 As a user of ALEX and tester of web applications, you should
 
 * be familiar with HTML and CSS
-* Be familiar with REST interfaces and exchange formats like JSON
+* be familiar with REST interfaces and exchange formats like JSON
 * have logical thinking abilities
 * have a basic understanding of active automata learning
 * have a basic understanding of web application testing
@@ -44,7 +44,7 @@ This document contains some terms related to automata learning which are listed 
 <dl>
     <dt>System under learning (SUL)</dt>
     <dd>The system we want to infer an automaton model from.
-        Often also called system under testing (SUT.)</dd>
+        Often also called system under testing (SUT).</dd>
     <dt>Symbol</dt>
     <dd>We differentiate between input and output symbols.
         Input symbols are modeled by the user and define possible inputs to a system.
@@ -65,7 +65,7 @@ This document contains some terms related to automata learning which are listed 
     <dt>Counterexample</dt>
     <dd>A counterexample is a word, where the output of the system and the learned model differ.
         Counterexamples are used to trigger the refinement of the model.
-        We call a model the *final hypothesis*, if no counterexamples can be found.</dd>
+        We call a model the <em>final hypothesis</em>, if no counterexamples can be found.</dd>
 </dl>
 
 The following graphic illustrates the general learning process and thus the relation between the terms listed above.
@@ -79,7 +79,7 @@ The following graphic illustrates the general learning process and thus the rela
     <dt>User</dt>
     <dd>A user is identified by its email address and can have one of two roles: <em>ADMIN</em> or <em>REGISTERED</em>.</dd>
     <dt>Project</dt>
-    <dd>A project is the main entities that the following entities belong to. 
+    <dd>A project is the main entity that the following entities belong to. 
         It is bound to a unique name and a URL that starts with *"http\[s\]://"* that points to the application to test.</dd>
     <dt>Symbol group</dt>
     <dd>Each project has a list of symbol groups. 

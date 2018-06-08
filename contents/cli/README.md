@@ -16,7 +16,7 @@ npm install
 Furthermore, make sure that the backend of ALEX is running.
 Look at the [start page](../../README.md) of this documentation to get instructions for how to run ALEX.
 
-## Executing Integration Tests
+## Executing integration tests
 
 For executing tests from the cli, you need three files:
 
@@ -89,7 +89,7 @@ node alex-cli.js --uri "http://localhost:8000" \
 
 Finally, the project that has been created automatically during the testing, is deleted.
 
-## Starting Learning Experiments
+## Starting learning experiments
 
 You can also run learning experiments with the cli.
 The only difference is that the configuration file is a little more complex.

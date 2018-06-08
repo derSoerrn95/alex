@@ -1,6 +1,6 @@
 # Counters
 
-As you may recall, counters are positive integer values that are created, modified and used during a learning process and persisted in the database over multiple learning processes.
+As you may recall, counters are integer values that are created, modified and used during a learning process and persisted in the database over multiple learning processes.
 
 ![Counters 1](assets/counters/1.jpg)
 
